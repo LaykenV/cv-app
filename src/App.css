@@ -1,1 +1,54 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+.headerContainer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: rgb(151, 133, 133);
+}
+
+.headerText {
+    color: saddlebrown;
+}
+
+.bodyContainer {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: rgb(223, 208, 208);
+}
+
+.bodyLeftContainer {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.personalInputs > form, .experienceInputs > form, .educationInputs > form {
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    align-items: center;
+
+}
+
+.personalInputs, .experienceInputs, .educationInputs {
+    border-bottom: 2px solid black;
+    padding: .5rem;
+}
+
+.footerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(151, 133, 133);
+    color: saddlebrown;
+}
+
+
 
