@@ -3,30 +3,32 @@
     flex-direction: column;
     justify-content: space-between;
     min-height: 100vh;
+    box-sizing: border-box;
 }
 
 .headerContainer {
     display: flex;
     justify-content: center;
     align-content: center;
-    background-color: rgb(151, 133, 133);
+    background-color: rgb(51, 51, 51);
 }
 
 .headerText {
-    color: saddlebrown;
+    color: rgb(238, 238, 238);
 }
 
 .bodyContainer {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    background-color: rgb(223, 208, 208);
+    background-color: rgb(204, 204, 204);
 }
 
 .bodyLeftContainer {
     display: flex;
     flex-direction: column;
-    gap: .5rem;
+    margin: .5rem;
+    background-color:rgb(238, 238, 238);
 }
 
 .personalInputs > form, .experienceInputs > form, .educationInputs > form {
@@ -37,17 +39,199 @@
 
 }
 
-.personalInputs, .experienceInputs, .educationInputs {
+.personalInputs, .experienceInputs {
     border-bottom: 2px solid black;
     padding: .5rem;
+}
+
+.educationInputs {
+    padding: .5rem;
+}
+
+.bodyRightContainer {
+    margin: .5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.resumeHeader {
+    background-color: rgb(20, 62, 114);
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 6rem;
+    color: white;
+}
+
+.resumeName {
+    font-size: x-large;
+    margin-top: 1rem;
+}
+
+.resumeTitle {
+    font-size: large;
+}
+
+.contactInfo {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.resumePhoneNumber, .resumeEmail {
+    flex-basis: 1;
+    flex-grow: 1;
+    padding: .2rem;
+    text-align: center;
+    font-size: small;
+    white-space: nowrap;
+}
+
+.resumeBody {
+    display: flex;
+    flex-direction: column;
+    padding: .5rem;
+    gap: 1rem;
+    align-items: center;
+    background-color: rgb(238, 238, 238);
+    flex-grow: 1;
+}
+
+.resumeDescription, .resumeEducation, .resumeExperience {
+    width: 100%;
+}
+
+.resumeDescription {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: .5rem;
+}
+
+.descriptionHeader {
+    font-size: large;
+    border-bottom: 1px solid black;
+    width: 50%;
+}
+
+.resumeExperience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: .5rem;
+}
+
+.experienceHeader {
+    font-size: large;
+    border-bottom: 1px solid black;
+    width: 50%;
+}
+
+.resumeExperienceContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.experienceInfo {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: center;
+    flex-grow: 1;
+    flex-basis: 1;
+}
+
+.experienceDates {
+    flex-grow: 1;
+    flex-basis: 1;
+}
+
+.experienceTitle {
+    font-weight: bold;
+}
+
+.resumeEducation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: .5rem;
+}
+
+.educationHeader {
+    font-size: large;
+    border-bottom: 1px solid black;
+    width: 50%;
+}
+
+.resumeEducationContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.educationInfo {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: center;
+    flex-grow: 1;
+    flex-basis: 1;
+}
+
+.educationDates {
+    flex-basis: 1;
+    flex-grow: 1;
+}
+
+.experienceHeader, .educationHeader, .descriptionHeader {
+    width: 50%;
+    color: rgb(20, 62, 114);
+}
+
+.universityName {
+    font-weight: bold;
+}
+
+.experienceDates, .experienceInfo, .educationDates, .educationInfo {
+    width: 50%;
+}
+
+.resumeExperienceContainer, .resumeEducationContainer {
+    margin-bottom: .7rem;
 }
 
 .footerContainer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(151, 133, 133);
-    color: saddlebrown;
+    background-color: rgb(51, 51, 51);
+    color: rgb(238, 238, 238);
+}
+
+@media  only screen  and (min-width: 800px) {
+    .bodyContainer {
+        flex-direction: row;
+    }
+
+    .bodyLeftContainer, .bodyRightContainer {
+        width: 50%;
+    }
+
+    .resumeBody {
+        gap: 4rem;
+    }
+
+    .resumeDescription {
+        margin-top: 1rem;
+    }
 }
 
 

@@ -11,7 +11,7 @@ class ResumeEducation extends Component {
             <div className="resumeEducationContainer">
                 <div className="educationDates">From - To</div>
                 <div className="educationInfo">
-                    <div className="universityName">University name, City name</div>
+                    <div className="universityName">University name</div>
                     <div className="degreeInfo">Degree: </div>
                     <div className="subjectInfo">Subject:</div>
                 </div>

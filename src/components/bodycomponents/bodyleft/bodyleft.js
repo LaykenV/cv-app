@@ -12,8 +12,8 @@ class BodyLeft extends Component {
     render() {
         return(
             <div className="bodyLeftContainer">
-                <Personal />
-                <Experience />
+                <Personal user={this.props.user} submitPersonal={this.props.submitPersonal} />
+                <Experience submitExperience={this.props.submitExperience} />
                 <Education />
             </div>
         )

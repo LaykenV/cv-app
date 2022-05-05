@@ -6,18 +6,23 @@ class ResumeExperience extends Component {
         this.state = {};
     }
 
-    render() {
-        return(
-            <div className="resumeExperienceContainer">
-                <div className="experienceDates">2017 - 2021</div>
-                <div className="experienceInfo">
-                    <div className="experienceTitle">Ammo troop</div>
-                    <div className="experienceCompany">Air Force</div>
-                </div>
-                 
-            </div>
-        )
-    }
+ render() {
+     return (
+         <ul id="ul">
+             {this.props.experiences.map((experience) => {
+                 return (
+                    <div className="resumeExperienceContainer">
+                    <div className="experienceDates">2017 - 2021</div>
+                    <div className="experienceInfo">
+                      <div className="experienceTitle">Ammo troop</div>
+                      <div className="experienceCompany">Air Force</div>
+                    </div>
+                  </div>
+                 )
+             })}
+         </ul>
+     )
+ }
 }
 
 export default ResumeExperience;
