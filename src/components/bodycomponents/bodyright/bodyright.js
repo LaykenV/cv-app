@@ -13,7 +13,7 @@ class BodyRight extends Component {
         return(
             <div className="bodyRightContainer">
                     <ResumeHeader user={this.props.user} />
-                    <ResumeBody user={this.props.user} experiences={this.props.experiences}/>
+                    <ResumeBody user={this.props.user} experiences={this.props.experiences} userExp={this.props.userExp} educations={this.props.educations} userEdu={this.props.userEdu}/>
             </div>
         )
     }

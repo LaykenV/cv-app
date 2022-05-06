@@ -18,12 +18,11 @@ class ResumeBody extends Component {
                 </div>
                 <div className="resumeExperience">
                     <div className="experienceHeader">Experience</div>
-                    <ResumeExperience experiences={this.props.experiences}/>
+                    <ResumeExperience experiences={this.props.experiences} userExp={this.props.userExp}/>
                 </div>
                 <div className="resumeEducation">
                     <div className="educationHeader">Education</div>
-                    <ResumeEducation />
-                    <ResumeEducation />
+                    <ResumeEducation educations={this.props.educations} userEdu={this.props.userEdu}/>
                 </div>
             </div>
         )

@@ -8,14 +8,20 @@ class ResumeEducation extends Component {
 
     render() {
         return(
-            <div className="resumeEducationContainer">
-                <div className="educationDates">From - To</div>
-                <div className="educationInfo">
-                    <div className="universityName">University name</div>
-                    <div className="degreeInfo">Degree: </div>
-                    <div className="subjectInfo">Subject:</div>
-                </div>
-            </div>
+            <ul id="ul">
+                {this.props.educations.map((education) => {
+                    return (
+                    <div className="resumeEducationContainer" key={education.id}>
+                        <div className="educationDates">{education.eduFrom} - {education.eduTo}</div>
+                        <div className="educationInfo">
+                            <div className="universityName">{education.universityName}</div>
+                            <div className="degreeInfo">{education.degree}</div>
+                            <div className="subjectInfo">{education.subject}</div>
+                        </div>
+                    </div>
+                    )
+                })}
+            </ul>
         )
     }
 }

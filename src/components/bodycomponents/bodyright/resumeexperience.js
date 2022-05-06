@@ -11,11 +11,11 @@ class ResumeExperience extends Component {
          <ul id="ul">
              {this.props.experiences.map((experience) => {
                  return (
-                    <div className="resumeExperienceContainer">
-                    <div className="experienceDates">2017 - 2021</div>
+                    <div className="resumeExperienceContainer" key={experience.id}>
+                    <div className="experienceDates">{experience.expFrom} - {experience.expTo}</div>
                     <div className="experienceInfo">
-                      <div className="experienceTitle">Ammo troop</div>
-                      <div className="experienceCompany">Air Force</div>
+                      <div className="experienceTitle">{experience.position}</div>
+                      <div className="experienceCompany">{experience.company}</div>
                     </div>
                   </div>
                  )

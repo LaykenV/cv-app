@@ -12,9 +12,9 @@ class BodyLeft extends Component {
     render() {
         return(
             <div className="bodyLeftContainer">
-                <Personal user={this.props.user} submitPersonal={this.props.submitPersonal} />
+                <Personal  submitPersonal={this.props.submitPersonal} />
                 <Experience submitExperience={this.props.submitExperience} />
-                <Education />
+                <Education submitEducation={this.props.submitEducation}/>
             </div>
         )
     }
